@@ -1,6 +1,9 @@
 class Solution {
     public int strStr(String haystack, String needle) 
     {
+        if (haystack.length() < needle.length())
+            return -1;
+        
         if(haystack.length() == 0 || needle.length() == 0 )
             return 0;
         
